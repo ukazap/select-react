@@ -269,6 +269,7 @@ var Async = (function (_Component) {
 					return _this3.select = _ref;
 				},
 				onChange: function onChange(newValues) {
+					if (!newValues) newValues = '';
 					if (_this3.props.value && newValues.length > _this3.props.value.length) {
 						_this3.clearOptions();
 					}
