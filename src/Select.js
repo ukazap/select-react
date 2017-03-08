@@ -439,6 +439,11 @@ const Select = React.createClass({
 		};
 		if (this.props.onBlurResetsInput) {
 			onBlurredState.inputValue = '';
+			if (this.state.inputValue) {
+				event.stopPropagation();
+				event.preventDefault();
+				this.setValue(this.getResetValue());
+			}
 		}
 		this.setState(onBlurredState);
 	},

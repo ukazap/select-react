@@ -225,7 +225,7 @@ export default class Async extends Component {
 				// }
 				if (!newValues || newValues === '') {
 					newValues = '';
-					this._onInputChange(newValues);
+					this._onInputChssange(newValues);
 				}
 				this.props.onChange(newValues);
 			}
