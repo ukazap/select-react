@@ -272,6 +272,10 @@ var Async = (function (_Component) {
 					// if (this.props.value && (newValues.length > this.props.value.length)) {
 					// 	this.clearOptions();
 					// }
+					if (!newValues || newValues === '') {
+						newValues = '';
+						_this3._onInputChange(newValues);
+					}
 					_this3.props.onChange(newValues);
 				}
 			};

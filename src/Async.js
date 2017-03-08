@@ -223,6 +223,10 @@ export default class Async extends Component {
 				// if (this.props.value && (newValues.length > this.props.value.length)) {
 				// 	this.clearOptions();
 				// }
+				if (!newValues || newValues === '') {
+					newValues = '';
+					this._onInputChange(newValues);
+				}
 				this.props.onChange(newValues);
 			}
 		};
