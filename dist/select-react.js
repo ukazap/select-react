@@ -275,7 +275,7 @@ var Async = (function (_Component) {
 					// }
 					if (!newValues || newValues === '') {
 						newValues = '';
-						_this3._onInputChssange(newValues);
+						_this3._onInputChange(newValues);
 					}
 					_this3.props.onChange(newValues);
 				}
