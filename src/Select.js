@@ -949,6 +949,9 @@ const Select = React.createClass({
 				}
 			);
 		} else {
+			if (this.props.multi) {
+				options = _.difference(options, this.props.value)
+			}
 			return options;
 		}
 	},

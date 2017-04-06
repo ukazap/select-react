@@ -1821,6 +1821,9 @@ var Select = _react2['default'].createClass({
 				valueKey: this.props.valueKey
 			});
 		} else {
+			if (this.props.multi) {
+				options = _.difference(options, this.props.value);
+			}
 			return options;
 		}
 	},
